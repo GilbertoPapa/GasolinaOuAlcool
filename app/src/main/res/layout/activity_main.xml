@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:paddingEnd="2dp"
+
+    tools:context="com.gilbertopapa.gasolina_ou_alcool.MainActivity">
+
+
+    <EditText
+        android:id="@+id/edt_alcool"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/imageView"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edt_gasolina"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:layout_below="@+id/adt_gasolina"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="68dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edt_alcool"
+        android:layout_alignStart="@+id/edt_alcool"
+        android:layout_marginBottom="41dp"
+        android:paddingEnd="4dp"
+        android:paddingLeft="30dp"
+        android:text="Álcool"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/adt_gasolina"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignStart="@+id/edt_gasolina"
+        android:paddingEnd="4dp"
+        android:paddingLeft="22dp"
+        android:text="Gasolina"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verificar"
+        android:layout_below="@+id/edt_gasolina"
+        android:layout_alignEnd="@+id/edt_gasolina"
+        android:layout_marginTop="28dp"
+        android:layout_alignStart="@+id/edt_alcool" />
+
+
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/calcular"
+        android:layout_alignStart="@+id/calcular"
+        android:layout_below="@+id/calcular"
+        android:layout_marginTop="42dp"
+        android:padding="10dp"
+        android:textStyle="bold" />
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="58dp"
+        app:srcCompat="@drawable/gasolina_ou_alcool"
+        android:layout_above="@+id/textView4"
+        android:layout_alignEnd="@+id/adt_gasolina"
+        android:layout_marginEnd="83dp" />
+
+
+</RelativeLayout>
